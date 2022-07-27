@@ -1,4 +1,9 @@
 <?php get_header() ?>
+<style>
+.elementor-2525 .elementor-element.elementor-element-3a98c2c:not(.elementor-motion-effects-element-type-background), .elementor-2525 .elementor-element.elementor-element-3a98c2c > .elementor-motion-effects-container > .elementor-motion-effects-layer {
+    background-color: #000000;
+}
+</style>
 <div id="wpfaqs">
     <div id="wpfaqs_skleton" v-if="is_results === false">
         <div class="fqs_contents">
@@ -73,6 +78,7 @@
         <div class="fqs_contents">
             <div class="wpfaqs_search_module">
                 <div class="top_search_box">
+                    <img width="110px" class="wfqs_logo" src="<?php echo $logoUrl ?>">
                     <h1>How can we help you?</h1>
                     <input type="text" id="faq_search_inp" placeholder="Search" @keyup="search_faq_input(event)">
                     <div v-if="loadedResults.length > 0" class="faqs_search_box">

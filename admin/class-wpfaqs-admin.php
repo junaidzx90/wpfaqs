@@ -124,7 +124,7 @@ class Wpfaqs_Admin {
 			'label'               => __( 'help', 'wpfaqs' ),
 			'description'         => __( 'Faq news and reviews', 'wpfaqs' ),
 			'labels'              => $labels,
-			'supports'            => array( 'title', 'editor' ),
+			'supports'            => array( 'title', 'editor', 'thumbnail' ),
 			'taxonomies'          => array( 'helpc' ),
 			'hierarchical'        => false,
 			'public'              => true,
